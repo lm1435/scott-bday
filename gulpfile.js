@@ -13,10 +13,14 @@ gulp.task('js-compress', function(){
 });
 
 gulp.task('sass', function(){
-  gulp.src("pre-css/*.scss")
+  return gulp.src("pre-css/*.scss")
     .pipe(plumber())
     .pipe(sass())
     .pipe(gulp.dest("css"));
+});
+
+gulp.task('sass:watch', function(){
+  gulp.watch('pre-css/*.scss', ['sass']);
 });
 
 gulp.task('jshint', function(){
@@ -26,4 +30,4 @@ gulp.task('jshint', function(){
     .pipe(jshint.reporter("default"));
 });
 
-gulp.task("default", ["sass", "jshint", "js-compress"]);
+gulp.task("default", ["sass:watch", "sass", "jshint", "js-compress"]);

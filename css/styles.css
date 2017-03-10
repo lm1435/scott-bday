@@ -1,0 +1,10 @@
+@media (min-width: 320px) {
+  .total-body {
+    width: 95%;
+    margin: auto; }
+  .hero {
+    margin: auto; } }
+
+@media (min-width: 1200px) {
+  .total-body {
+    width: 1200px; } }
