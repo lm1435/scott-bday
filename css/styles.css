@@ -5,14 +5,17 @@
   .hero {
     margin: auto; }
   .party-info {
-    margin-top: 1em;
+    margin: 1em 0; }
+  .leftSide img {
     padding: 2em; }
   .rightSide {
-    margin: 1em auto; }
+    margin: 2em auto; }
     .rightSide #timer {
       font-size: 1em;
       font-weight: bold;
       -webkit-font-smoothing: antialiased;
+      text-transform: uppercase;
+      font-family: 'Montserrat', sans-serif;
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -23,7 +26,21 @@
         display: -webkit-flex;
         display: -ms-flexbox;
         display: flex;
-        justify-content: center; } }
+        justify-content: center; }
+  .images {
+    margin: 1em auto; }
+    .images .top, .images .bottom {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      justify-content: space-between; }
+      .images .top img, .images .bottom img {
+        width: 48%;
+        margin-bottom: .5em; } }
 
 @media (min-width: 768px) {
   .party-info {
@@ -32,10 +49,7 @@
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap; }
+    display: flex; }
   .rightSide {
     margin: auto; }
     .rightSide #timer {
@@ -43,8 +57,15 @@
       .rightSide #timer span {
         font-size: 2em; }
       .rightSide #timer div {
-        margin: 0 .5em; } }
+        margin: 0 .5em; }
+  .party {
+    width: 60%;
+    margin: 2em auto; }
+  .top img, .bottom img {
+    width: 22% !important; } }
 
 @media (min-width: 1200px) {
   .total-body {
-    width: 1200px; } }
+    width: 1200px; }
+  .rightSide #timer span {
+    font-size: 3em; } }
