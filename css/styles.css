@@ -8,7 +8,7 @@
     margin-top: 1em;
     padding: 2em; }
   .rightSide {
-    margin-top: 1em; }
+    margin: 1em auto; }
     .rightSide #timer {
       font-size: 1em;
       font-weight: bold;
@@ -35,7 +35,15 @@
     display: flex;
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap; } }
+    flex-wrap: wrap; }
+  .rightSide {
+    margin: auto; }
+    .rightSide #timer {
+      font-size: 1.2em; }
+      .rightSide #timer span {
+        font-size: 2em; }
+      .rightSide #timer div {
+        margin: 0 .5em; } }
 
 @media (min-width: 1200px) {
   .total-body {
