@@ -3,7 +3,39 @@
     width: 95%;
     margin: auto; }
   .hero {
-    margin: auto; } }
+    margin: auto; }
+  .party-info {
+    margin-top: 1em;
+    padding: 2em; }
+  .rightSide {
+    margin-top: 1em; }
+    .rightSide #timer {
+      font-size: 1em;
+      font-weight: bold;
+      -webkit-font-smoothing: antialiased;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      justify-content: space-around; }
+      .rightSide #timer span {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        justify-content: center; } }
+
+@media (min-width: 768px) {
+  .party-info {
+    margin-top: 2em;
+    padding: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; } }
 
 @media (min-width: 1200px) {
   .total-body {
