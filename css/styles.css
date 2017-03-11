@@ -1,7 +1,8 @@
 @media (min-width: 320px) {
   .total-body {
     width: 95%;
-    margin: auto; }
+    margin: auto;
+    font-family: 'Montserrat', sans-serif; }
   .hero {
     margin: auto; }
   .party-info {
@@ -15,7 +16,6 @@
       font-weight: bold;
       -webkit-font-smoothing: antialiased;
       text-transform: uppercase;
-      font-family: 'Montserrat', sans-serif;
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -27,6 +27,11 @@
         display: -ms-flexbox;
         display: flex;
         justify-content: center; }
+  a.link {
+    color: #AF4034;
+    text-decoration: underline; }
+    a.link a:hover, a.link a:active, a.link a:visited {
+      color: inherit !important; }
   .images {
     margin: 1em auto; }
     .images .top, .images .bottom {
@@ -58,14 +63,27 @@
         font-size: 2em; }
       .rightSide #timer div {
         margin: 0 .5em; }
-  .party {
-    width: 60%;
-    margin: 2em auto; }
-  .top img, .bottom img {
-    width: 22% !important; } }
+  .information {
+    margin: 3em auto;
+    width: 80%;
+    padding: 4em;
+    background-color: #dddfe6; }
+    .information .party {
+      width: 65%;
+      margin: 2em; }
+  .images .top img, .images .bottom img {
+    width: 22%;
+    margin-bottom: 2em; } }
 
 @media (min-width: 1200px) {
   .total-body {
     width: 1200px; }
-  .rightSide #timer span {
-    font-size: 3em; } }
+  .leftSide img {
+    padding: 2em 0; }
+  .rightSide #timer {
+    background-color: #dddfe6;
+    padding: 4em; }
+    .rightSide #timer span {
+      font-size: 3em; }
+  .images {
+    margin: 5em auto; } }
