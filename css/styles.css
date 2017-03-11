@@ -1,10 +1,9 @@
 @media (min-width: 320px) {
-  body {
-    background-color: #f5f5f6; }
   .total-body {
-    width: 95%;
+    width: 100%;
     margin: auto;
-    font-family: 'Montserrat', sans-serif; }
+    font-family: 'Montserrat', sans-serif;
+    padding: 1em; }
   .hero {
     background-image: url(../images/hero.jpg);
     background-repeat: no-repeat;
@@ -24,13 +23,13 @@
     .hero h1 {
       color: #fff;
       text-align: center; }
-  .timer-section {
-    margin: 1em 0; }
+  .timer-section, .information, .images, .about-scott {
+    width: 90%;
+    margin: 1em auto; }
   .leftSide img {
     padding: 2em; }
   .rightSide {
-    margin: 2em auto;
-    background-color: #ff625d; }
+    margin: 2em auto; }
     .rightSide #timer {
       font-size: 1em;
       font-weight: bold;
@@ -40,14 +39,18 @@
       display: -webkit-flex;
       display: -ms-flexbox;
       display: flex;
-      justify-content: space-around; }
+      justify-content: space-around;
+      color: #AF4034; }
       .rightSide #timer span {
         display: -webkit-box;
         display: -webkit-flex;
         display: -ms-flexbox;
         display: flex;
         justify-content: center; }
-  .party {
+  .information h2 {
+    text-align: center;
+    color: #AF4034; }
+  .information .party {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -58,20 +61,20 @@
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
-    .party .location, .party .date, .party .rsvp {
-      background-color: white;
+    .information .party .location, .information .party .date, .information .party .rsvp {
+      background-color: #dadada;
       padding: 3em 5em;
       border-radius: 25px;
       margin: 2em 0;
       width: 22em; }
-      .party .location h4, .party .date h4, .party .rsvp h4 {
+      .information .party .location h4, .information .party .date h4, .information .party .rsvp h4 {
         margin: 1em 0 2em; }
-      .party .location .fa-3x, .party .date .fa-3x, .party .rsvp .fa-3x {
+      .information .party .location .fa-3x, .information .party .date .fa-3x, .information .party .rsvp .fa-3x {
         color: #AF4034; }
-  a {
+  .information a {
     color: #AF4034;
     text-decoration: underline; }
-    a a:hover, a a:active, a a:visited {
+    .information a a:hover, .information a a:active, .information a a:visited {
       color: inherit !important; }
   .images {
     margin: 1em auto; }
@@ -86,7 +89,7 @@
       justify-content: space-between; }
       .images .top img, .images .bottom img {
         width: 48%;
-        margin-bottom: .5em; } }
+        margin: 0 auto .5em; } }
 
 @media (min-width: 768px) {
   .timer-section {
@@ -111,12 +114,11 @@
     margin-bottom: 2em; } }
 
 @media (min-width: 1200px) {
-  .total-body .hero {
-    width: 100%; }
+  .total-body {
+    padding: 0; }
   .leftSide img {
     padding: 2em 0; }
   .rightSide #timer {
-    background-color: #dddfe6;
     padding: 4em; }
     .rightSide #timer span {
       font-size: 3em; }
