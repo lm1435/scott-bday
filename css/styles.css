@@ -4,8 +4,21 @@
     margin: auto;
     font-family: 'Montserrat', sans-serif; }
   .hero {
-    margin: auto; }
-  .party-info {
+    background-image: url(../images/hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 500px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; }
+    .hero h1 {
+      color: #fff;
+      text-align: center; }
+  .timer-section {
     margin: 1em 0; }
   .leftSide img {
     padding: 2em; }
@@ -27,11 +40,18 @@
         display: -ms-flexbox;
         display: flex;
         justify-content: center; }
-  a.link {
-    color: #AF4034;
-    text-decoration: underline; }
-    a.link a:hover, a.link a:active, a.link a:visited {
-      color: inherit !important; }
+  .party {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-around;
+    text-align: center; }
+    .party a.link {
+      color: #AF4034;
+      text-decoration: underline; }
+      .party a.link a:hover, .party a.link a:active, .party a.link a:visited {
+        color: inherit !important; }
   .images {
     margin: 1em auto; }
     .images .top, .images .bottom {
@@ -48,7 +68,7 @@
         margin-bottom: .5em; } }
 
 @media (min-width: 768px) {
-  .party-info {
+  .timer-section {
     margin-top: 2em;
     padding: 0;
     display: -webkit-box;
@@ -63,14 +83,8 @@
         font-size: 2em; }
       .rightSide #timer div {
         margin: 0 .5em; }
-  .information {
-    margin: 3em auto;
-    width: 80%;
-    padding: 4em;
-    background-color: #dddfe6; }
-    .information .party {
-      width: 65%;
-      margin: 2em; }
+  .hero h1 {
+    font-size: 4em; }
   .images .top img, .images .bottom img {
     width: 22%;
     margin-bottom: 2em; } }
