@@ -23,6 +23,10 @@
     .hero h1 {
       color: #fff;
       text-align: center; }
+    .hero .age {
+      display: flex; }
+      .hero .age #numbers {
+        margin-left: .3em; }
   .timer-section, .information, .images, .about-scott {
     width: 90%;
     margin: 1em auto; }
