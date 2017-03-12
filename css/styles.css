@@ -34,6 +34,9 @@
     padding: 2em; }
   .rightSide {
     margin: 2em auto; }
+    .rightSide .final-countdown {
+      text-align: center;
+      font-size: 3em; }
     .rightSide #timer {
       font-size: 1em;
       font-weight: bold;
@@ -81,12 +84,14 @@
     text-decoration: underline; }
     .information a a:hover, .information a a:active, .information a a:visited {
       color: inherit !important; }
-  .images h2 {
-    color: #AF4034;
-    margin: 3em auto;
-    text-align: center; }
-  .images img {
-    margin-bottom: 2em; } }
+  .images {
+    margin-bottom: 5em; }
+    .images h2 {
+      color: #AF4034;
+      margin: 3em auto;
+      text-align: center; }
+    .images img {
+      margin-bottom: 2em; } }
 
 @media (min-width: 768px) {
   .timer-section {
@@ -112,7 +117,5 @@
     padding: 0; }
   .leftSide img {
     padding: 2em 0; }
-  .rightSide #timer {
-    padding: 4em; }
-    .rightSide #timer span {
-      font-size: 3em; } }
+  .rightSide #timer span {
+    font-size: 3em; } }
